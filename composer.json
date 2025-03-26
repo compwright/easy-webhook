@@ -1,0 +1,37 @@
+{
+    "name": "compwright/easy-webhook",
+    "description": "Easy Webhook tools for building PSR-compliant SDKs for PHP",
+    "keywords": ["psr-7"],
+    "homepage": "https://github.com/compwright/easy-webhook",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^8.3",
+        "ext-openssl": "*",
+        "psr/http-message": "^1.0 || ^1.1 || ^2.0"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.72",
+        "phpstan/phpstan": "^2.1",
+        "phpunit/phpunit": "^10.5"
+    },
+    "suggest": {
+        "compwright/php-jwks": "Work with JWKS keys for webhook signing"
+    },
+    "authors": [
+        {
+            "name": "Jonathon Hill",
+            "email": "jonathon@compwright.com"
+        }
+    ],
+    "autoload" : {
+        "psr-4": {
+            "Compwright\\EasyWebhook\\": "src/"
+        }
+    },
+    "autoload-dev" : {
+        "psr-4": {
+            "Compwright\\EasyWebhook\\": "tests/"
+        }
+    }
+}
