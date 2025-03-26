@@ -1,7 +1,9 @@
 {
     "name": "compwright/easy-webhook",
     "description": "Easy Webhook tools for building PSR-compliant SDKs for PHP",
-    "keywords": ["psr-7"],
+    "keywords": [
+        "psr-7"
+    ],
     "homepage": "https://github.com/compwright/easy-webhook",
     "type": "library",
     "license": "MIT",
@@ -24,12 +26,12 @@
             "email": "jonathon@compwright.com"
         }
     ],
-    "autoload" : {
+    "autoload": {
         "psr-4": {
             "Compwright\\EasyWebhook\\": "src/"
         }
     },
-    "autoload-dev" : {
+    "autoload-dev": {
         "psr-4": {
             "Compwright\\EasyWebhook\\": "tests/"
         }
